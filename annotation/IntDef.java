@@ -1,4 +1,4 @@
-package android.support.annotation;
+package androidx.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -10,5 +10,7 @@ import java.lang.annotation.Target;
 public @interface IntDef {
     boolean flag() default false;
 
-    long[] value() default {};
+    boolean open() default false;
+
+    int[] value() default {};
 }

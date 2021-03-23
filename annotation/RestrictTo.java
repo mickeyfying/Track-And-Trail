@@ -1,4 +1,4 @@
-package android.support.annotation;
+package androidx.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -12,6 +12,7 @@ public @interface RestrictTo {
     public enum Scope {
         LIBRARY,
         LIBRARY_GROUP,
+        LIBRARY_GROUP_PREFIX,
         GROUP_ID,
         TESTS,
         SUBCLASSES
